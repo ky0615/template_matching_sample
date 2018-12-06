@@ -475,3 +475,6 @@ gradle-app.setting
 **/build/
 
 # End of https://www.gitignore.io/api/linux,windows,osx,intellij,emacs,vim,node,kotlin,java,gradle,python
+figure/*
+!figure/.gitkeep
+

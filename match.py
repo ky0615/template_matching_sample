@@ -30,6 +30,14 @@ def main():
 
 
 def template_matching_builtin(base_image, input_image, template_image):
+    fileName = [
+        'CCOEFF',
+        'CCOEFF_NORMED',
+        'CCORR',
+        'CCORR_NORMED',
+        'SQDIFF',
+        'SQDIFF_NORMED'
+    ]
     methods = [
         'cv2.TM_CCOEFF',
         'cv2.TM_CCOEFF_NORMED',
@@ -101,6 +109,7 @@ def template_matching_builtin(base_image, input_image, template_image):
         plt.subplot(1, 2, 2), plt.imshow(cv2.cvtColor(b_img, cv2.COLOR_BGR2RGB))
         plt.title('Detected Point'), plt.xticks([]), plt.yticks([])
         plt.show()
+        # plt.savefig('./figure/{}.png'.format(fileName[i]))
     print(score)
 
 
